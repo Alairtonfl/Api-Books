@@ -50,18 +50,15 @@ const App = () => {
   const ItemView = ({item}) => {
     return (
       <Text
-        style={styles.itemStyle}
-        onPress={() => getItem(item)}>
+        style={styles.itemStyle}>
         {'Author: '}
         {item.author + '\n'}
         {'Title: '}
-        {item.title}
+        {item.title + '\n'}
+        {'Url: '}
+        {item.url}
       </Text>
     );
-  };
-
-  const getItem = (item) => {
-    alert('\n\nTarefa : ' + item.author);
   };
 
   return (
